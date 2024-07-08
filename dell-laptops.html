@@ -5,6 +5,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Additional styles for responsiveness */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-box {
+            flex: 1 1 30%;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 1200px) {
+            .product-box {
+                flex: 1 1 45%;
+            }
+        }
+        @media (max-width: 768px) {
+            .product-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
 <body class="is-preload">
 <div id="page-wrapper">
@@ -31,24 +54,24 @@
                         <article>
                             <header>
                                 <h2>Dell Laptops</h2>
-                                <p>Explore our range of Dell laptops available.</p>
+                                <h4>Explore our range of Dell laptops available.</p>
                             </header>
-                            <div class="row gtr-uniform">
+                            <div class="row gtr-uniform product-container">
                                 <!-- Replace with actual images and descriptions -->
-                                <div class="col-4">
-                                    <span class="image fit"><a href="dell-laptop1.jpg"><img src="images/dell-laptop1.jpg" alt="Dell Laptop 1" /></a></span>
-                                    <h3>Dell Laptop 1</h3>
-                                    <p>Description of Dell Laptop 1.</p>
+                                <div class="col-4 product-box">
+                                    <span class="image fit"><a href="dell-laptop1.jpg"><img src="images/dell-2.jpg" alt="Dell Laptop 1" /></a></span>
+                                    <!-- <h3>Dell Laptop 1</h3>
+                                    <p>Description of Dell Laptop 1.</p> -->
                                 </div>
-                                <div class="col-4">
-                                    <span class="image fit"><a href="dell-laptop2.jpg"><img src="images/dell-laptop2.jpg" alt="Dell Laptop 2" /></a></span>
-                                    <h3>Dell Laptop 2</h3>
-                                    <p>Description of Dell Laptop 2.</p>
+                                <div class="col-4 product-box">
+                                    <span class="image fit"><a href="dell-laptop2.jpg"><img src="images/dell-3.jpg" alt="Dell Laptop 2" /></a></span>
+                                    <!-- <h3>Dell Laptop 2</h3>
+                                    <p>Description of Dell Laptop 2.</p> -->
                                 </div>
-                                <div class="col-4">
-                                    <span class="image fit"><a href="dell-laptop3.jpg"><img src="images/dell-laptop3.jpg" alt="Dell Laptop 3" /></a></span>
-                                    <h3>Dell Laptop 3</h3>
-                                    <p>Description of Dell Laptop 3.</p>
+                                <div class="col-4 product-box">
+                                    <span class="image fit"><a href="dell-laptop3.jpg"><img src="images/delllp-1.jpg" alt="Dell Laptop 3" /></a></span>
+                                    <!-- <h3>Dell Laptop 3</h3>
+                                    <p>Description of Dell Laptop 3.</p> -->
                                 </div>
                                 <!-- Add more Dell laptops as needed -->
                             </div>

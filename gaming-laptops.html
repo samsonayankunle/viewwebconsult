@@ -4,7 +4,24 @@
     <title>Gaming Laptops - Viewweb Consult Nigeria Limited</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .image-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 1em;
+        }
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body class="is-preload">
 <div id="page-wrapper">
@@ -30,14 +47,29 @@
                         <article>
                             <header>
                                 <h2>Gaming Laptops</h2>
-                                <p>Explore our collection of powerful gaming laptops from top brands.</p>
+                                <h4>Explore our collection of powerful gaming laptops from top brands.</p>
                             </header>
                             <div class="row">
-                                <div class="col-12">
-                                    <span class="image fit"><img src="images/gaming-laptop.jpg" alt="" /></span>
-                                    <h3>Product Name</h3>
-                                    <p>Detailed description of the gaming laptop, features, specifications, and pricing.</p>
-                                    <p>Additional information about warranty, availability, and customer reviews.</p>
+                                <div class="col-md-4 mb-4">
+                                    <div class="image-container">
+                                        <img src="images/gaming-3.jpg" alt="Gaming Laptop">
+                                    </div>
+                                    <!-- <h3>Gaming Laptop 1</h3>
+                                   <!--<p>Description of Gaming Laptop 1.</p> -->
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="image-container">
+                                        <img src="images/gaming-4.jpg" alt="Gaming Laptop 2">
+                                    </div>
+                                    <!-- <h3>Gaming Laptop</h3>
+                                    <p>Description of Gaming Laptop 2.</p> -->
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="image-container">
+                                        <img src="images/gaming-5.jpg" alt="Gaming Laptop 3">
+                                    </div>
+                                    <!-- <h3>Gaming Laptop 3</h3>
+                                    <p>Description of Gaming Laptop 3.</p> -->
                                 </div>
                             </div>
                         </article>
@@ -54,14 +86,11 @@
                 <section class="col-12">
                     <h3>Contact Information</h3>
                     <p>
-						<i class="fa fa-map-marker-alt"></i> 12 Olaayeni Street, Ikeja, Lagos, Nigeria<br>
-						<br>
-						<i class="fa fa-envelope"></i> contact@viewwebconsult.com<br>
-						<br>
-						<i class="fa fa-phone"></i> +234 802 376 7667
-						<br>
-						<i class = "fa fa-mobile"></i> +234 806 644 8012
-					</p>
+                        <i class="fa fa-map-marker-alt"></i> 12 Olaayeni Street, Ikeja, Lagos, Nigeria<br>
+                        <i class="fa fa-envelope"></i> contact@viewwebconsult.com<br>
+                        <i class="fa fa-phone"></i> +234 802 376 7667<br>
+                        <i class="fa fa-mobile"></i> +234 806 644 8012
+                    </p>
                 </section>
             </div>
         </div>
@@ -74,8 +103,7 @@
         <!-- Copyright -->
         <div class="copyright">
             <ul class="menu">
-                <li>&copy; Viewweb Consult Nigeria Limited. <br>
-                    All rights reserved</li>
+                <li>&copy; Viewweb Consult Nigeria Limited. <br> All rights reserved</li>
             </ul>
         </div>
     </div>
@@ -87,5 +115,7 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></script>
 </body>
 </html>

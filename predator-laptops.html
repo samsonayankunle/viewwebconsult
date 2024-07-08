@@ -5,6 +5,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Additional styles for responsiveness, if needed */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-container .product-box {
+            flex: 1 1 30%;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .product-container .product-box {
+                flex: 1 1 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .product-container .product-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
 <body class="is-preload">
 <div id="page-wrapper">
@@ -24,33 +47,33 @@
     <!-- Main -->
     <section class="wrapper style1">
         <div class="container">
-            <div class="row gtr-200">
+            <div class="row">
                 <div class="col-12">
                     <div id="content">
                         <!-- Content -->
                         <article>
                             <header>
                                 <h2>Predator Laptops</h2>
-                                <p>Explore our range of powerful Predator gaming laptops.</p>
+                                <h4>Explore our range of powerful Predator gaming laptops.</p>
                             </header>
-                            <div class="row gtr-uniform">
+                            <div class="product-container">
                                 <!-- Replace with actual images and descriptions -->
-                                <div class="col-4">
-                                    <span class="image fit"><a href="predator-image1.jpg"><img src="images/predator-image1.jpg" alt="Predator Laptop 1" /></a></span>
-                                    <h3>Predator Laptop 1</h3>
+                                <div class="product-box">
+                                    <span class="image fit"><a href="predator-image1.jpg"><img src="images/predator-2.jpg" alt="Predator Laptop 1" /></a></span>
+                                    <!-- <h3>Predator Laptop 1</h3>
                                     <p>Description of Predator Laptop 1.</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="product-box">
                                     <span class="image fit"><a href="predator-image2.jpg"><img src="images/predator-image2.jpg" alt="Predator Laptop 2" /></a></span>
                                     <h3>Predator Laptop 2</h3>
                                     <p>Description of Predator Laptop 2.</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="product-box">
                                     <span class="image fit"><a href="predator-image3.jpg"><img src="images/predator-image3.jpg" alt="Predator Laptop 3" /></a></span>
                                     <h3>Predator Laptop 3</h3>
                                     <p>Description of Predator Laptop 3.</p>
                                 </div>
-                                <!-- Add more Predator laptops as needed -->
+                                 Add more Predator laptops as needed -->
                             </div>
                         </article>
                     </div>
